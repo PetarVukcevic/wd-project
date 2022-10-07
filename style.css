@@ -29,6 +29,11 @@ body {
     align-items: center;
 }
 
+.container h1,
+h2 i {
+    color: blue;
+}
+
 .nav-item:hover {
     /* border-bottom: 5px solid gray; */
     color: gray;

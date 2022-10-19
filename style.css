@@ -1,171 +1,66 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(183, 183, 183);
-    font-family: 'Tangerine', serif;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: rgb(40, 40, 40);
 }
 
-.navbar {
+nav {
     display: flex;
-    background-color: rgb(46, 46, 46);
     justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color: #ff3f;
+    position: sticky;
+}
+
+.navbar-brand {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-title {
+    font-size: 28px;
 }
 
 .nav-items {
     display: flex;
     align-items: center;
-}
-
-.nav-item:link {
-    text-decoration: none;
-    padding: 10px;
-    text-align: center;
+    justify-content: center;
+    gap: 10px;
     font-size: 20px;
+}
+
+.nav-link {
     text-decoration: none;
-    color: white;
-    /* justify-content: flex-end; */
-    align-items: center;
+    color: rgb(40, 40, 40);
 }
 
-.nav-item:visited {
-    color: white;
+.nav-link:hover {
+    font-weight: bold;
+    transition: 0.1s;
 }
 
-.nav-item:hover {
-    /* border-bottom: 5px solid gray; */
-    color: gray;
+.nav-link:active {
     text-decoration: underline;
-}
-
-.nav-item:active {
-    color: green;
-}
-
-.container h1,
-h2 i {
-    color: blue;
-    /* font-family: 'Times New Roman', Times, serif; */
-}
-
-.container p {
-    /* font-family: 'Times New Roman', Times, serif; */
-    font-size: 1.5em;
-    text-align: justify;
-}
-
-.container p:first-child {
-    /* font-family: 'Times New Roman', Times, serif; */
-    /* font-size: 3.5em; */
     color: red;
-    font-style: italic;
-}
-
-.nav-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
-}
-
-.nav-img img {
-    border-radius: 50%;
-    height: 40px;
-    justify-content: center;
-    align-items: center;
-}
-
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.link:link {
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    color: darkgray;
-    text-decoration: none;
-}
-
-.link:visited {
-    color: purple;
-}
-
-.link:active {
-    color: red;
-    text-decoration: none;
-}
-
-.link:hover {
-    border: 2px dashed black;
 }
 
 .container {
-    text-align: center;
-    border-radius: 10px;
-    background-color: white;
-}
-
-.audio {
-    display: block;
-    margin: 15px auto;
-}
-
-.video {
-    display: block;
-    margin: 15px auto;
-}
-
-table {
-    width: 40%;
+    width: 80%;
     margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    padding: 10px;
 }
 
-table,
-tr,
-td {
-    border: 1px solid black;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-}
-
-tr:nth-child(odd) {
-    background-color: green;
-}
-
-tr:nth-child(even) {
-    background-color: pink;
-}
-
-li {
-    list-style-type: none;
-}
-
-li:first-child {
-    background-color: red;
-}
-
-li:nth-child(2) {
-    background-color: yellow;
-}
-
-li:last-child {
-    background-color: blue;
-}
-
-footer {
-    /* border-top: 1px solid black; */
-    background-color: rgb(203, 203, 203);
-    padding: 30px 0;
-    text-align: center;
-    font-weight: bold;
-    font-style: italic;
-}
-
-p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.img-petar {
+    width: 400px;
+    height: 450px;
 }

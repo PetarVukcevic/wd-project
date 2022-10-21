@@ -68,6 +68,16 @@ body {
     max-width: 100%;
 }
 
+.about-p {
+    align-self: center;
+    padding: 0 60px;
+    text-align: justify;
+}
+
+.about-p p {
+    padding: 10px 0;
+}
+
 .skills-section,
 .contact-section {
     background-color: yellow;
@@ -96,12 +106,6 @@ body {
     overflow: hidden;
 }
 
-.box .basketball-img {
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-}
-
 .content {
     color: #fff;
     background-color: rgba(0, 0, 0, 0.8);
@@ -121,6 +125,38 @@ body {
 
 
 /* HOBBIES FINISH */
+
+
+/* Hobby slider */
+
+#owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    /*  */
+    /* object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-height: 600px;
+    margin-bottom: 1rem;
+    border-radius: 10px; */
+}
+
+.row {
+    margin-top: 50px;
+}
+
+.pic-container {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+    max-height: 300px;
+}
+
+.pic-container .back-img {
+    width: 100%;
+    align-self: center;
+}
 
 .contact-button {
     text-decoration: none;
@@ -192,4 +228,13 @@ body {
     width: 100%;
     height: 100%;
     background: url("../img/gif/loader.gif") center center no-repeat;
+}
+
+@media (max-width: 991px) {
+    .about-p {
+        padding: 5px;
+    }
+    .row {
+        margin: 0 10px 0 0;
+    }
 }
